@@ -56,14 +56,23 @@ const EXPERIENCE = [
     title: "Software Developer",
     company: "Shrine Consultancy Services Private Limited",
     period: "08/2025 – Present",
-    location: "Ahmedabad, Gujrat",
+    location: "Ahmedabad, Gujarat",
     highlights: [
-      "Engineered a scalable CSV import framework using Apex Batch classes and NPSP to process high-volume donation records.",
-      "Authored Apex Triggers, TDTM, and Record-Triggered Flows for end-to-end data validation across 10,000+ records.",
-      "Developed LWC to extend nonprofit business workflows and surface actionable data to operations teams.",
-      "Designed dynamic reports and dashboards providing real-time visibility into fundraising pipelines."
+      "Developed a CSV import and data processing framework in Salesforce NPSP to handle high-volume donation data for Breakthrough T1D.",
+      "Built Apex Triggers, Batch Classes, Flows, and LWCs to support complex nonprofit business requirements and bulk data processing.",
+      "Implemented data validation, transformation, and ingestion workflows to maintain data quality and system integrity.",
+      "Created dynamic Salesforce reports and dashboards to provide operational visibility and actionable business insights."
     ],
-    tech: ["Salesforce NPSP", "Apex", "LWC", "Record-Triggered Flows", "SOQL", "Reports & Dashboards"]
+    tech: [
+      "Salesforce NPSP",
+      "Sales Cloud",
+      "Apex",
+      "Apex Batch",
+      "LWC",
+      "Flows",
+      "SOQL",
+      "Reports & Dashboards"
+    ]
   },
   {
     title: "Junior Salesforce Developer",
@@ -71,12 +80,26 @@ const EXPERIENCE = [
     period: "05/2024 – 07/2025",
     location: "Mohali",
     highlights: [
-      "Delivered end-to-end Sales Cloud, Service Cloud, and Marketing Cloud implementation for a national moving company.",
-      "Integrated Stripe, Xero, and OptimoRoute via REST API callouts using Named Credentials and custom Apex handlers.",
-      "Built an external-facing data capture form using Salesforce Sites for non-Salesforce users.",
-      "Designed Journey Builder email campaigns with interaction tracking to trigger automated nurture sequences."
+      "Implemented and customized Sales Cloud, Service Cloud, and Marketing Cloud solutions for managing Leads, Accounts, Opportunities, Quotes, and Work Orders.",
+      "Integrated Salesforce with Stripe, Xero, and OptimoRoute using REST APIs to support payment processing, invoicing, route optimization, and real-time order tracking.",
+      "Developed an external-facing Salesforce Sites form to capture and display information for non-Salesforce users.",
+      "Designed Journey Builder email campaigns with email interaction tracking and automated follow-up nurture sequences.",
+      "Configured SMS campaigns using Mobile Studio to notify customers about product launches and promotions."
     ],
-    tech: ["Sales Cloud", "Service Cloud", "Marketing Cloud", "Apex", "Stripe/Xero Integration", "Journey Builder", "Salesforce Sites"]
+    tech: [
+      "Sales Cloud",
+      "Service Cloud",
+      "Marketing Cloud",
+      "Apex",
+      "LWC",
+      "Salesforce Sites",
+      "Stripe Integration",
+      "Xero Integration",
+      "OptimoRoute Integration",
+      "Journey Builder",
+      "Email Studio",
+      "Mobile Studio"
+    ]
   }
 ];
 
@@ -84,29 +107,70 @@ const PROJECTS = [
   {
     name: "Piano Movers",
     role: "Salesforce Developer",
-    description: "Multicloud implementation managing Leads, Accounts, and Work Orders. Integrated critical business tools for invoicing and routing.",
-    tech: ["Sales Cloud", "Service Cloud", "Marketing Cloud", "Stripe", "Xero", "OptimoRoute"],
+    description:
+      "Implemented and customized a multi-cloud Salesforce solution using Sales Cloud, Service Cloud, and Marketing Cloud to manage Leads, Accounts, Opportunities, Quotes, and Work Orders. Built Apex logic, Flows, external forms, and third-party integrations with Stripe, Xero, and OptimoRoute.",
+    tech: [
+      "Sales Cloud",
+      "Service Cloud",
+      "Marketing Cloud",
+      "Apex",
+      "LWC",
+      "Flows",
+      "Salesforce Sites",
+      "Stripe",
+      "Xero",
+      "OptimoRoute",
+      "Journey Builder",
+      "Mobile Studio"
+    ],
     icon: <Cloud className="w-6 h-6" />
   },
   {
     name: "Breakthrough T1D (JDRF)",
     role: "Salesforce Developer",
-    description: "NPSP implementation for donation management. Built a robust CSV import framework and automated validation rules.",
-    tech: ["NPSP", "Apex Batch", "LWC", "TDTM", "Flows"],
+    description:
+      "Worked on a Salesforce NPSP implementation focused on donation data management. Developed a CSV import framework, Apex automation, Flows, and LWCs to process high-volume donation records while maintaining data quality and operational visibility.",
+    tech: [
+      "Salesforce NPSP",
+      "Sales Cloud",
+      "Apex",
+      "Apex Batch",
+      "LWC",
+      "Flows",
+      "Reports & Dashboards"
+    ],
     icon: <Zap className="w-6 h-6" />
   },
   {
     name: "FoodChainid",
     role: "Salesforce Developer",
-    description: "Standardized renewal workflows with Sales Engagement cadences. Implemented health-score branching for personalized engagement.",
-    tech: ["Sales Engagement", "Cadences", "Branching Logic", "Flows"],
+    description:
+      "Designed and implemented Salesforce Sales Engagement renewal cadences to standardize renewal workflows. Built health-score based branching logic, account-based touchpoints, and automated activities to improve follow-up consistency and renewal productivity.",
+    tech: [
+      "Sales Engagement",
+      "Cadences",
+      "Flows",
+      "Branching Logic",
+      "Task Automation",
+      "Account-Based Touchpoints"
+    ],
     icon: <Layers className="w-6 h-6" />
   },
   {
     name: "Enliven",
     role: "Salesforce Admin",
-    description: "Health Cloud optimization. Implemented Salesforce Maps for nurse routing and patient heat-maps for geographical planning.",
-    tech: ["Health Cloud", "Salesforce Maps", "Custom Objects", "Reporting"],
+    description:
+      "Configured Health Cloud features including Custom Objects, Fields, Flows, Reports, and Dashboards. Implemented Salesforce Maps with nurse data layers and patient heat maps to support location-based planning, routing, and operational insights.",
+    tech: [
+      "Health Cloud",
+      "Salesforce Maps",
+      "Flows",
+      "Custom Objects",
+      "Reports & Dashboards",
+      "Profiles",
+      "Permission Sets",
+      "Sharing Rules"
+    ],
     icon: <MapIcon className="w-6 h-6" />
   }
 ];
@@ -125,6 +189,13 @@ const EDUCATION = [
     year: "2020",
     location: "Naraingarh, Ambala",
     score: "89% (CBSE)"
+  },
+  {
+    degree: "10th Standard",
+    school: "Blue Bells School",
+    year: "2018",
+    location: "Naraingarh, Ambala",
+    score: "79.8% (CBSE)"
   }
 ];
 
